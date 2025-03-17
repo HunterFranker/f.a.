@@ -69,23 +69,26 @@
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            background-color: #FFBB66; /* 修改底色 */
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #FFBB66, #FF9933); /* 淡橘漸層 */
+            color: #FFFFFF; /* 白色字體 */
+            padding: 14px 24px; /* 增加內邊距，讓按鈕更顯眼 */
+            border-radius: 12px; /* 圓角加強 */
             font-size: 18px;
             font-weight: bold;
             text-decoration: none;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 12px rgba(255, 128, 0, 0.4); /* 陰影加深，提高立體感 */
+            transition: all 0.3s ease-in-out; /* 增加滑鼠懸停動畫 */
         }
-    
-        /* 圖標大小調整 */
-        .icon {
-            font-size: 24px; /* 讓圖示變大 */
+
+        /* 圖示變大 */
+        .fixed-button i {
+            font-size: 26px;
         }
+
     </style>
     
     
