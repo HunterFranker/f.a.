@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>長圖片滾動</title>
+    <title>長客下單流程</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -28,19 +29,39 @@
             width: 100%;
             display: block;
         }
+        /* 固定底部按鈕 */
+        .fixed-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .fixed-button i {
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
+
     <div class="scroll-container">
         <img src="https://care.amway.com.tw/xiaoi/imgmsgData/images/20240925164754_331.jpg" alt="長圖片">
     </div>
+
+    <!-- 固定底部按鈕 -->
+    <a href="https://shop.amway.com.tw/login?h=L2xhbmRpbmc=" target="_blank" rel="noopener noreferrer" class="fixed-button">
+        <i class="fa-regular fa-hand-point-right"></i> 馬上加入長客計畫
+    </a>
+
 </body>
-<a href="https://shop.amway.com.tw/login?h=L2xhbmRpbmc=" target="_blank" rel="noopener noreferrer" 
-   style="display: flex; align-items: center; text-decoration: none; font-size: 18px; font-weight: bold; color: #000;">
-    <i class="fa-regular fa-hand-point-right" style="margin-left: 8px;"> 馬上加入長客計畫</i>
-</a>
-
-<!-- 確保你有引入 Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 </html>
