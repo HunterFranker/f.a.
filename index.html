@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>長圖片滾動</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* 禁止 body 滾動 */
+            background-color: white;
+        }
+        .scroll-container {
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            overflow-y: auto; /* 允許滾動 */
+            -webkit-overflow-scrolling: touch; /* iOS 流暢滾動 */
+            touch-action: manipulation; /* 修正 iOS 滾動卡頓 */
+        }
+        .scroll-container img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-container">
+        <img src="https://care.amway.com.tw/xiaoi/imgmsgData/images/20240925164754_331.jpg" alt="長圖片">
+    </div>
+</body>
+</html>
